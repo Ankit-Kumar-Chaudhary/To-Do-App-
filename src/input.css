@@ -1,0 +1,14 @@
+@import "tailwindcss";
+.circle {
+  @apply relative before:content-[''] before:absolute before:-left-4 before:top-1.5 sm:before:top-2  before:w-3.5 before:h-3.5 before:rounded-full before:border;
+}
+.checked {
+  @apply line-through;
+}
+
+.checked-circle {
+  @apply relative before:content-['✅'] before:absolute before:-left-5 before:top-1 before:flex before:items-center before:justify-center before:w-4 before:h-4.5 before:rounded-full before:bg-green-500 before:text-white line-through;
+}
+.cross {
+  @apply absolute right-2 sm:right-6 hover:bg-red-500 w-6 h-7 text-center font-bold hover:rounded;
+}

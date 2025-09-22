@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/output.css" />
+    <title>Todo List</title>
+  </head>
+  <body class="bg-slate-900 select-none">
+    <main class="flex justify-center items-center h-screen">
+      <div
+        class="todo h-120 w-80 sm:h-150 sm:w-100 text-center rounded-2xl shadow-xl/50 bg-amber-50 overflow-y-auto"
+      >
+        <h1
+          class="text-3xl sm:text-4xl font-medium font-serif bg-amber-200 h-10 sm:h-12"
+        >
+          To Do List 📃
+          <span class="text-sm text-amber-600 opacity-20">Made By Ankit </span>
+        </h1>
+        <hr />
+        <div class="row flex flex-row justify-center mt-4">
+          <input
+            type="text"
+            placeholder="Add Your Text"
+            maxlength="24"
+            class="input-box px-5 sm:text-xl focus:outline-none border-1 border-gray-400 rounded"
+          />
+          <button
+            class="add-btn font-medium px-5 py-1 ml-0.5 rounded bg-amber-500 cursor-pointer hover:bg-green-500"
+          >
+            Add
+          </button>
+        </div>
+        <!-- Task List -->
+        <ul
+          class="Task-list text-left m-5 mt-3 sm:mt-5 ml-5 sm:ml-10 sm:text-xl pl-4 cursor-pointer relative"
+        >
+          <!-- <li class="">Task 1</li>
+          <li class="">Task 1</li>
+          <li class="">Task 1</li> -->
+        </ul>
+      </div>
+    </main>
+    <!-- Java Script Link -->
+    <script src="script.js"></script>
+  </body>
+</html>
